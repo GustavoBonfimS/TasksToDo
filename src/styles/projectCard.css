@@ -1,0 +1,45 @@
+.cardRoot {
+  max-width: 400px;
+}
+
+.cardHeader {
+  display: grid;
+  grid-template-columns: 1fr 10px;
+  margin-bottom: -10px;
+}
+
+.cardHeaderIcons {
+  
+}
+
+.toDo {
+  height: 20px;
+  max-width: 370px;
+  background-color: red;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.toDo p {
+  margin-left: 8px;
+}
+
+.done {
+  height: 20px;
+  max-width: 370px;
+  background-color: green;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.done p {
+  margin-left: 8px;
+}
+
+.addH4 {
+  margin-left: 10px;
+}
+
+.btnSave {
+  margin-left: 50px;
+}
