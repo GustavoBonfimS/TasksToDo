@@ -53,6 +53,7 @@ export default function Home() {
     const { data } = await api.post('/project', newProjObj);
     const newProjArr = [...data];
     setProjects(newProjArr);
+    setNewProjectName('');
   }
 
   return (

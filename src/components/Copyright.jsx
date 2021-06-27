@@ -8,8 +8,8 @@ export default function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
-      <Link color="inherit" href="https://www.instagram.com/midia_simples/">
-        Midia Simples
+      <Link color="inherit" href="https://github.com/creare-studio" target="_blank">
+        Creare Studio
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}

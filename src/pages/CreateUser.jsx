@@ -75,7 +75,7 @@ export default function CreateUser() {
           <AddCircleOutline />
         </Avatar>
         <Typography component="h1" variant="h5">
-          Cadastrar usuario
+          Cadastrar usuário
         </Typography>
         <form className={classes.form} onSubmit={handleSubmit}>
           <TextField
@@ -83,7 +83,7 @@ export default function CreateUser() {
             margin="normal"
             required
             fullWidth
-            label="Nome de usuario"
+            label="Nome de usuário"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             autoFocus
@@ -93,7 +93,7 @@ export default function CreateUser() {
             margin="normal"
             required
             fullWidth
-            label="Nova senha"
+            label="Senha"
             type="password"
             value={password}
             onChange={(e) => setPasswrd(e.target.value)}

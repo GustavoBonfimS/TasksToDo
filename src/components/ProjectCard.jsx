@@ -46,6 +46,10 @@ export default function ProjectCard({ project }) {
   }
 
   async function handleAddTask() {
+    if (!newTaskName) {
+      alert('Por favor, digite algo');
+      return;
+    }
     let today = new Date();
     const dd = String(today.getDate()).padStart(2, "0");
     const mm = String(today.getMonth() + 1).padStart(2, "0"); //January is 0!
@@ -61,6 +65,7 @@ export default function ProjectCard({ project }) {
     };
     const { data } = await api.post("/task", newTask);
     const newTasksArr = [...tasks];
+    setNewTaskName('');
     newTasksArr.push(data);
     setTasks(newTasksArr);
     // window.location.reload();
